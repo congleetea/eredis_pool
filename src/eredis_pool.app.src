@@ -9,17 +9,29 @@
                  ]},
   {mod, { eredis_pool_app, []}},
   {env, []}
-
-%% sample configuration.
-%%
-%%  {env, [
-%%          {pools, [
-%%                   {dbsrv, [
-%%                              {size, 10},
-%%                              {max_overflow, 30}
-%%                             ]}
-%%	          ]}
-%%        ]}
-%%
-
+  {env, [
+         {pools, [
+                  {default, [
+                             {size, 10},
+                             {max_overflow, 20}
+                            ], []},
+                  {pool1, [
+                           {size, 30},
+                           {max_overflow, 20}
+                          ], [
+                              {host, "192.168.31.120"},
+                              {port, 6379}
+                             ]},
+                  {pool2, [
+                           {size, 20},
+                           {max_overflow, 20}
+                          ], [
+                              {host, "192.168.31.120"},
+                              {port, 6379},
+                              {database, "mqtt"},
+                              {password, "mqtt"},
+                              {reconnect_sleep, 100}
+                             ]}
+                 ]}
+        ]}
 ]}.
