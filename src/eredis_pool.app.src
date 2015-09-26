@@ -8,7 +8,6 @@
                   stdlib
                  ]},
   {mod, { eredis_pool_app, []}},
-  {env, []}
   {env, [
          {pools, [
                   {default, [
