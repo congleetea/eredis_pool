@@ -9,7 +9,7 @@
                  ]},
   {mod, { eredis_pool_app, []}},
   {env, [
-         {global_or_local, local},
+         {global_or_local, global},
          {pools, [
                   {default, [
                              {size, 10},
