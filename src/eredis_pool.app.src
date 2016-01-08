@@ -11,16 +11,16 @@
   {env, [
          {global_or_local, global},
          {pools, [
-                  {default, [
-                             {size, 10},
-                             {max_overflow, 20}
+                  {mqtt_redis_pool, [
+                             {size, 100},
+                             {max_overflow, 120}
                             ], [
                               {host, "192.168.31.120"},
                               {port, 6379}
                              ]},
-                  {pool1, [
-                           {size, 30},
-                           {max_overflow, 20}
+                  {tokens, [
+                           {size, 100},
+                           {max_overflow, 120}
                           ], [
                               {host, "192.168.31.120"},
                               {port, 6379}
