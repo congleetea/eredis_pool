@@ -15,14 +15,14 @@
                              {size, 100},
                              {max_overflow, 120}
                             ], [
-                              {host, "192.168.31.120"},
+                              {host, "localhost"},
                               {port, 6379}
                              ]},
                   {tokens, [
                            {size, 100},
                            {max_overflow, 120}
                           ], [
-                              {host, "192.168.31.120"},
+                              {host, "localhost"},
                               {port, 6379}
                              ]}
                   
