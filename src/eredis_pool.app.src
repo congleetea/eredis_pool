@@ -1,7 +1,7 @@
 {application, eredis_pool,
  [
   {description, ""},
-  {vsn, "1.1"},
+  {vsn, "v1.1"},
   {registered, []},
   {applications, [
                   kernel,
@@ -11,24 +11,24 @@
                  ]},
   {mod, { eredis_pool_app, []}},
   {env, [
-         %{global_or_local, global},
-         %{pools, [
-                  % {pool1, [
-                  %            {size, 100},
-                  %            {max_overflow, 120}
-                  %           ], [
-                  %             {host, "localhost"},
-                  %             {port, 6379},
-                  %             {database, 0}
-                  %            ]},
-                  % {pool2, [
-                  %          {size, 100},
-                  %          {max_overflow, 120}
-                  %         ], [
-                  %             {host, "localhost"},
-                  %             {port, 6379},
-                  %             {database, 1}
-                  %            ]}
-                 %]}
+         %% {global_or_local, local},
+         %% {pools, [
+         %%          {pool1, [
+         %%                     {size, 100},
+         %%                     {max_overflow, 120}
+         %%                    ], [
+         %%                      {host, "localhost"},
+         %%                      {port, 6379},
+         %%                      {database, 0}
+         %%                     ]},
+         %%          {pool2, [
+         %%                   {size, 100},
+         %%                   {max_overflow, 120}
+         %%                  ], [
+         %%                      {host, "localhost"},
+         %%                      {port, 6379},
+         %%                      {database, 1}
+         %%                     ]}
+         %%         ]}
         ]}
 ]}.

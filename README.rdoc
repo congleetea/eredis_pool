@@ -6,11 +6,11 @@ eredis:
 https://github.com/wooga/eredis
 
 poolboy:
-https://github.com/devinus/poolboy
+https://github.com/congleetea/poolboy (fork from https://github.com/comtihon/poolboy)
 
 ==Setup
 
- $ git clone git://github.com/hiroeorz/eredis_pool.git
+ $ git clone git://github.com/congleetea/eredis_pool.git
  $ cd eredis_pool
  $ make get-deps
  $ make
@@ -71,9 +71,8 @@ add new pools.
 
 ==Examples
 
-application start.
- eredis_pool:start().
- ok
+cd eredis_pool && erl -pa ebin -pa ./deps/*/ebin
+> application:ensure_all_started(eredis_pool).
 
 key-value set and get
  eredis_pool:q({global, dbsrv}, ["SET", "foo", "bar"]).
