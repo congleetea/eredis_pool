@@ -11,8 +11,8 @@
                  ]},
   {mod, { eredis_pool_app, []}},
   {env, [
-         %% {global_or_local, local},
-         %% {pools, [
+         {global_or_local, local},
+         {pools, [
          %%          {pool1, [
          %%                     {size, 100},
          %%                     {max_overflow, 120}
@@ -29,6 +29,6 @@
          %%                      {port, 6379},
          %%                      {database, 1}
          %%                     ]}
-         %%         ]}
+         ]}
         ]}
 ]}.
